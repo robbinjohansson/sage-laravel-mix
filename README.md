@@ -1,11 +1,12 @@
-# [sage-laravel-mix](https://github.com/robbinfellow/sage-laravel-mix)
+# sage-laravel-mix
 
-This is an extension of the Sage starter theme for Wordpress, all credits goes to the awesome work made by the guys over at [roots](https://roots.io/) This repo was originally cloned from [Sage official repo](https://github.com/roots/sage) at **2017-11-01**.
+This is an extension of the Sage starter theme for Wordpress, all credit goes to the awesome work made by the guys over at [roots.](https://roots.io/) This repo was originally cloned from [Sage official repo](https://github.com/roots/sage) at **2017-11-01** and will continuously be updated according to changes made at the original theme.
 
 ## Different from Sage 9:
 
 * Laravel Mix as a wrapper for webpack
-* Vuejs by default
+* Vue.js by default
+* Bulma by default
 * Prepared with [WP Glide](https://github.com/wpup/glide) ([Glide](https://github.com/thephpleague/glide))
 
 ### Installation
@@ -23,12 +24,16 @@ $ yarn run dev / production / watch
 
 ### Laravel mix
 
+Laravel Mix is preconfigured when cloning this theme. However it might be a good idea to review the full documentation [on GitHub.](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme)
+
 ```shell
-# Watch and compile assets
-$ yarn run watch
-# Compile assets
+# Compile assets without minification
 $ yarn run dev
-# Compile and minify assets for production
+
+# Watch working assets
+$ yarn run watch
+
+# Minify and compile assets for production
 $ yarn run production
 ```
 
