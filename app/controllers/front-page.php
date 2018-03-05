@@ -1,12 +1,12 @@
 <?php
 
-// Data available in the Home view
+// Data available in the Front Page view
 
 namespace App;
 
 use Sober\Controller\Controller;
 
-class Home extends Controller
+class FrontPage extends Controller
 {
     // Custom posts
     public function customPosts()
@@ -23,11 +23,14 @@ class Home extends Controller
             'suppress_filters' => true
         );
         $the_query = new \WP_Query($args);
+
         // The Loop
         if ( $the_query->have_posts() ) {
             while ( $the_query->have_posts() ) {
                 $the_query->the_post();
-                // dd(get_post_custom());
+
+                $example_meta = (isset(get_post_custom()['_example_meta_1'][0]) ? get_post_custom()['_example_meta_1'][0] : '');
+
                 $data[] = [
                     'id' => get_the_ID(),
                     'date' => get_the_time('F j'),
@@ -35,11 +38,12 @@ class Home extends Controller
                     'excerpt' => get_the_excerpt(),
                     'content' => get_the_content(),
                     'permalink' => get_permalink(),
-                    'example_meta_field' => get_post_custom()['_example_meta_1'][0]
+                    'example_meta_field' => $example_meta
                 ];
             }
             wp_reset_postdata();
         }
+
         // Pass data to view
         return $data;
     }
