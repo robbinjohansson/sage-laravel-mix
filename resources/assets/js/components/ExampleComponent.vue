@@ -6,22 +6,19 @@
 </template>
 
 <script>
-    export default {
-
-        mounted() {
-            this.initExample();
-        },
-
-        data() {
-            return {
-                // 
-            }
-        },
-
-        methods: {
-            initExample(){
-                console.log('Component mounted.');
-            }
+export default {
+    mounted() {
+        this.initExample();
+    },
+    data() {
+        return {
+            //
+        }
+    },
+    methods: {
+        initExample(){
+            console.log('Component mounted.');
         }
     }
+}
 </script>

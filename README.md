@@ -1,6 +1,8 @@
 # sage-laravel-mix
 
-This is an extension of the Sage starter theme for Wordpress, all credit goes to the awesome work made by the guys over at [roots.](https://roots.io/) This repo was originally cloned from [Sage official repo](https://github.com/roots/sage) at **2017-11-01** and will continuously be updated according to changes made at the original theme.
+> Sage is a WordPress starter theme with a modern development workflow.
+
+This is an extension of the Sage WordPress starter theme, all credit goes to the awesome work made by the guys over at [roots.](https://roots.io/) This repo was originally cloned from [Sage official repo](https://github.com/roots/sage) at **2017-11-01** and will continuously be updated according to changes made at the original theme.
 
 ## Different from Sage 9:
 
@@ -11,7 +13,7 @@ This is an extension of the Sage starter theme for Wordpress, all credit goes to
 
 ### Installation
 
-This readme assumes you are using the bedrock structure for Wordpress, for installation/instructions head over to the [Bedrock repo](https://github.com/roots/bedrock).
+This readme assumes you are familiar with [Sage](https://github.com/roots/sage) and [Bedrock](https://github.com/roots/bedrock) structure for Wordpress. If not, head over to [https://roots.io/](https://roots.io/) to learn more.
 
 ```shell
 # @ bedrock/web/app/themes
@@ -47,20 +49,16 @@ $ composer require frozzare/wp-glide
 
 > **Protip:** Don't forget to activate the plugin after you install it.
 
-***
-
-# [Sage](https://roots.io/sage/)
-
-[![Packagist](https://img.shields.io/packagist/vpre/roots/sage.svg?style=flat-square)](https://packagist.org/packages/roots/sage)
-[![devDependency Status](https://img.shields.io/david/dev/roots/sage.svg?style=flat-square)](https://david-dm.org/roots/sage#info=devDependencies)
-[![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/roots/sage)
-[![Sponsored by ES6.io](https://img.shields.io/badge/%F0%9F%92%9A_Sponsored_by-ES6.io%20Tutorials-brightgreen.svg?style=flat-square)](https://roots.io/r/es6)
-
-Sage is a WordPress starter theme with a modern development workflow.
-
-
 ## Documentation
 
-Sage 8 documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
+* [Sage documentation](https://roots.io/sage/docs/)
+* [Controller documentation](https://github.com/soberwp/controller#usage)
 
-Sage 9 documentation is currently in progress and can be viewed at [https://github.com/roots/docs/tree/sage-9/sage](https://github.com/roots/docs/tree/sage-9/sage).
+## Credits
+
+* [Roots](https://roots.io/)
+* [Robbin Johansson](https://github.com/robbinfellow)
+
+## License
+
+sage-laravel-mix is an open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

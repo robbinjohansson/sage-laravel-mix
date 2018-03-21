@@ -3,7 +3,7 @@
 - [ ] I've read the [guidelines for Contributing to Roots Projects](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md)
 - [ ] This is a feature request
 - [ ] This is a bug report
-- [ ] This request isn't a duplicate of an [existing issue](https://github.com/roots/sage/issues)
+- [ ] This request isn't a duplicate of an [existing issue](https://github.com/robbinfellow/sage-laravel-mix/issues)
 - [ ] I've read the [docs](https://roots.io/sage/docs) and [NPM Debugging Guidelines post](https://discourse.roots.io/t/npm-debugging-guidelines-failed-npm-install-bower-install-or-gulp-build-read-this/3060) and followed them (if applicable)
 - [ ] This is not a personal support request that should be posted on the [Roots Discourse](https://discourse.roots.io/c/sage) forums
 

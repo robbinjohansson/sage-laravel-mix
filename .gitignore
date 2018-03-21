@@ -1,9 +1,8 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
-.cache-loader
-bower_components
-node_modules
+/node_modules
 npm-debug.log
+yarn-debug.log
 yarn-error.log
 vendor
 resources/assets/config-local.json
