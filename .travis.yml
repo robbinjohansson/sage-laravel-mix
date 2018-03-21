@@ -3,7 +3,6 @@ sudo: false
 dist: trusty
 php:
   - 7.1
-  - 7.0
   - nightly
 
 env:
@@ -33,8 +32,6 @@ install:
   - composer install -o --prefer-dist --no-interaction
 
 script:
-  - yarn run test
-  - yarn run build
-  - yarn run rmdist
-  - yarn run "build:production"
+  - yarn run dev
+  - yarn run production
   - composer test
