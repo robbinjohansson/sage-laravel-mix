@@ -11,7 +11,7 @@
 {!! get_search_form(false) !!}
 @endif
 
-@while(have_posts()) @php(the_post())
+@while(have_posts()) @php the_post() @endphp
     @include('partials.content-search')
 @endwhile
 
