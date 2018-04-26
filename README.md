@@ -21,7 +21,7 @@ $ git clone https://github.com/robbinfellow/sage-laravel-mix.git
 $ cd sage-laravel-mix
 $ composer install
 $ yarn
-$ yarn run dev / production / watch
+$ yarn dev / production / watch
 ```
 
 ### Laravel mix
@@ -30,13 +30,13 @@ Laravel Mix is preconfigured when cloning this theme. However it might be a good
 
 ```shell
 # Compile assets without minification
-$ yarn run dev
+$ yarn dev
 
 # Watch working assets
-$ yarn run watch
+$ yarn watch
 
 # Minify and compile assets for production
-$ yarn run production
+$ yarn production
 ```
 
 ### (Optional) [WP Glide](https://github.com/wpup/glide)
