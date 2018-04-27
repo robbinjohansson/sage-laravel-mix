@@ -5,7 +5,7 @@
 @include('partials.page-header')
 
 @if (!have_posts())
-<div class="notification is-danger">
+<div>
     {{  __('Sorry, no results were found.', 'sage') }}
 </div>
 {!! get_search_form(false) !!}

@@ -9,9 +9,9 @@
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
-    "bulma": "^0.6.2",
     "cross-env": "^5.1.4",
     "laravel-mix": "^2.1.11",
+    "tailwindcss": "^0.5.2",
     "vue": "^2.5.16"
   }
 }

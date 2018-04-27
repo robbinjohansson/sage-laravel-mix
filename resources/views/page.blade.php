@@ -4,12 +4,10 @@
     @while(have_posts()) @php the_post() @endphp
         @if(has_post_thumbnail())
             @php
-                $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full')[0] . '?w=1344&h=580&fit=crop&fm=pjpg&q=80';
+                $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full')[0] . '?w=1200&h=675&fit=crop&fm=pjpg&q=60';
             @endphp
-            <div class="columns">
-                <div class="column">
-                    <img src="{{ $image }}" class="image">
-                </div>
+            <div>
+                <img src="{{ $image }}">
             </div>
         @endif
         @include('partials.page-header')

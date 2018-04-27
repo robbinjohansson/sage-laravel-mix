@@ -8,7 +8,7 @@ require('./bootstrap');
 // Require Vue
 window.Vue = require('vue');
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('hello-world', require('./components/HelloWorld.vue'));
 
 const app = new Vue({
     el: '#app'

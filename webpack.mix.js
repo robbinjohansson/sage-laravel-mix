@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+let tailwindcss = require('tailwindcss');
 
 /*
  |--------------------------------------------------------------------------
@@ -17,8 +18,9 @@ mix.setPublicPath('dist')
          'babel-polyfill',
          'vue'
       ])
-   .sass('resources/assets/sass/app.sass', 'css/')
+   .sass('resources/assets/sass/app.scss', 'css/')
    .options({
-     processCssUrls: false
+     processCssUrls: false,
+     postCss: [ tailwindcss('./tailwind.js') ],
    })
    .version()

@@ -102,7 +102,7 @@ add_action('the_post', function ($post) {
 /**
  * Setup Sage options
  */
-add_action('after_setup_theme', function () { 
+add_action('after_setup_theme', function () {
 
     /**
      * Add JsonManifest to Sage container

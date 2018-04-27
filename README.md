@@ -7,8 +7,8 @@ This is an extension of the Sage WordPress starter theme, all credit goes to the
 ## Different from Sage 9:
 
 * Laravel Mix as a wrapper for webpack
-* Vue.js by default
-* Bulma by default
+* TailwindCSS
+* Vue.js
 * Prepared with [WP Glide](https://github.com/wpup/glide) ([Glide](https://github.com/thephpleague/glide))
 
 ### Installation
