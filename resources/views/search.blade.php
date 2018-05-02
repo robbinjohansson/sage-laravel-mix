@@ -6,7 +6,7 @@
 
 @if (!have_posts())
 <div>
-    {{  __('Sorry, no results were found.', 'sage') }}
+    {{ __('Sorry, no results were found.', 'sage') }}
 </div>
 {!! get_search_form(false) !!}
 @endif
