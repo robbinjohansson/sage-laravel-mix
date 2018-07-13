@@ -1,5 +1,5 @@
 let mix = require('laravel-mix');
-let tailwindcss = require('tailwindcss');
+require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -15,12 +15,16 @@ let tailwindcss = require('tailwindcss');
 mix.setPublicPath('dist')
    .js('resources/assets/js/app.js', 'js/')
    .extract([
-         'babel-polyfill',
-         'vue'
-      ])
+     'babel-polyfill',
+     'vue'
+   ])
    .sass('resources/assets/sass/app.scss', 'css/')
    .options({
      processCssUrls: false,
-     postCss: [ tailwindcss('./tailwind.js') ],
+     postCss: [ require('tailwindcss')('./tailwind.js') ],
    })
-   .version()
+   .purgeCss()
+
+if (mix.inProduction()) {
+  mix.version()
+}
