@@ -85,10 +85,6 @@ add_filter('sage/display_sidebar', function ($display) {
 /**
  * Glide configuration
  */
-add_filter('pre_option_upload_url_path', function () {
-    return home_url( '/img' );
-});
-
 add_filter('glide/options', function ($options) {
     $options['cache'] = WP_CONTENT_DIR . '/uploads/cache/glide';
     $options['max_image_size'] = 2000*2000;

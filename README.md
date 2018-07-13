@@ -39,7 +39,7 @@ $ yarn watch
 $ yarn production
 ```
 
-### (Optional) [WP Glide](https://github.com/wpup/glide)
+### WP Glide
 
 Run the following from your bedrock root:
 
@@ -47,7 +47,31 @@ Run the following from your bedrock root:
 $ composer require frozzare/wp-glide
 ```
 
+Use Glide to generate images:
+
+``` php
+@if(has_post_thumbnail())
+    <img src="{{ App::glideImage() }}?w=1200&h=675&fit=crop&fm=pjpg&q=60">
+@endif
+```
+
 > **Protip:** Don't forget to activate the plugin after you install it.
+
+#### Glide documentation
+- [WP Glide documentation](https://github.com/wpup/glide#documentation)
+- [Glide documentation](http://glide.thephpleague.com/)
+
+#### Disable WP Glide
+
+Don't want to use WP Glide? No problem, skip the Glide installation step from above and remove the following lines from `/app/filters.php`:
+
+``` php
+add_filter('glide/options', function ($options) {
+    $options['cache'] = WP_CONTENT_DIR . '/uploads/cache/glide';
+    $options['max_image_size'] = 2000*2000;
+    return $options;
+});
+```
 
 ## Documentation
 

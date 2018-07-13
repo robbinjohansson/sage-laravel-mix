@@ -37,4 +37,9 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public static function glideImage()
+    {
+        return str_replace('/app/uploads/', '/img/', get_the_post_thumbnail_url());
+    }
 }
