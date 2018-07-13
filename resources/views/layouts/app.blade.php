@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="antialiased" @php language_attributes() @endphp>
+<html class="bg-white antialiased" @php language_attributes() @endphp>
 @include('partials.head')
 <body @php body_class() @endphp>
 @php do_action('get_header') @endphp
