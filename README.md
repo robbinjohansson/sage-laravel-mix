@@ -2,7 +2,9 @@
 
 > Sage is a WordPress starter theme with a modern development workflow.
 
-This is an extension of the Sage WordPress starter theme, all credit goes to the awesome work made by the guys over at [roots.](https://roots.io/) This repo was originally cloned from [Sage official repo](https://github.com/roots/sage) at **2017-11-01** and will continuously be updated according to changes made at the original theme.
+This is an extension of the Sage WordPress starter theme, all credit goes to the awesome work made by the guys over at [roots.](https://roots.io/) This repo was originally cloned from [Sage official repo](https://github.com/roots/sage) at **2017-11-01** and ~will continuously be updated according to changes made at the original theme~ is heavily outdated.
+
+I have no plans on maintaining/updating this repo since I don't use wordpress anymore. See [#6](https://github.com/robbinworks/sage-laravel-mix/issues/6) if you want to contribute.
 
 ## Different from Sage 9:
 
